@@ -1,8 +1,43 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Responsive SFL Quality Website
 
-Currently, two official plugins are available:
+- This Website is responsive and works well on various devices, including desktops, tablets, and smartphones
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Optimize the user interface to provide an excellent user experience across different screen sizes
+
+- Clearly outlined Quality Policy with key principles and commitments.
+
+- Concise descriptions of Objectives, Department Goals, and Customer Focus Goals.
+
+- Incorporate interactive elements like sliders, tabs, or accordions for users to easily explore detailed information.
+
+- Clearly display contact information for inquiries or additional assistance.
+## Features
+
+- Responsive Design
+- User-Friendly Navigation
+- Policy Overview Section
+- Interactive Elements
+- Contact Information
+- Mobile-Friendly Menu
+
+
+
+## Live Link
+
+- https://sflquality.netlify.app/
+
+
+![Logo](https://i.ibb.co/rx1WMDf/quality-1.png)
+![Logo](https://i.ibb.co/wMh3Hq4/quality-2.png)
+
+
+## Tech Stack
+
+ Html, React Js
+
+
+## Support
+
+For support, email forhad.developer@gmail.com or join our Group
+
