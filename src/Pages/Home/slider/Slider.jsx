@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const CarouselMain = () => {
     const [currentSlider, setCurrentSlider] = useState(0);
@@ -50,7 +51,7 @@ export const Carousel2 = () => {
                 </p>
                 <button className="font-bold py-2 xl:py-3 text-xs md:text-base lg:text-lg xl:text-xl hover:scale-95 duration-300 px-4 lg:px-10 text-white bg-[#2f9fb8]
               before:absolute before:block before:inset-0 before:-z-10 before:bg-sky-500  after:block hover:after:w-full after:w-0 after:hover:left-0 after:right-0 after:top-0 after:h-full after:-z-10 after:duration-300 after:bg-sky-900 after:absolute relative inline-block">
-                    Explore More
+                    <Link to='/photo_gallery'>Explore More</Link>
                 </button>
             </div>
             <CarouselMain />

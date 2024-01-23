@@ -1,10 +1,13 @@
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import logo from './../assets/logo.png';
 
 const MainLayout = () => {
     const navItems = <>
         <li>
-            <a href="/">Home</a>
+            <Link to='/'>Home</Link>
+        </li>
+        <li>
+            <Link to='/photo_gallery'>Photo Gallery</Link>
         </li>
         <li>
             <a href="#policy">Policy</a>
