@@ -1,9 +1,19 @@
 import { GoGoal } from "react-icons/go";
-import logo from './../../../assets/quality.png'
+import logo from './../../../assets/quality.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const CustomerFocus = () => {
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     return (
-        <div>
+        <div data-aos="flip-left"
+            data-aos-delay="50"
+            data-aos-duration="1000">
             <div id="customer-focus" className="w-[300px] md:w-[350px] mx-auto space-y-8 shadow-[0px_0px_30px_2px_rgba(100,100,111,0.1)] relative p-8">
                 {/* top part  */}
                 <div>

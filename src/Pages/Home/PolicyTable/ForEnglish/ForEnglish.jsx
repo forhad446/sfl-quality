@@ -1,9 +1,19 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const ForEnglish = () => {
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     return (
         <div>
             <h1 className="text-xl font-semibold text-center mb-3 ">Policy with English</h1>
-            <div>
+            <div data-aos="zoom-in-right"
+                data-aos-delay="50"
+                data-aos-duration="1000">
                 <div className="collapse collapse-plus bg-[#1a1622] my-1">
                     <input type="radio" name="my-accordion-3" />
                     <div className="collapse-title text-xl font-medium text-[#EEF4FA]">

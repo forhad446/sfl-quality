@@ -6,12 +6,22 @@ import Objective from "../Objective/Objective";
 import ForBangla from "../PolicyTable/ForBangla/ForBangla";
 import ForEnglish from "../PolicyTable/ForEnglish/ForEnglish";
 import { Carousel2 } from "../slider/Slider";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Home = () => {
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     return (
         <div>
 
-            <div><Carousel2></Carousel2></div>
+            <div>
+                <Carousel2></Carousel2>
+            </div>
 
             <PageTitle title={'Quality Policy'}></PageTitle>
             <div id="policy" className="md:flex justify-between gap-5">

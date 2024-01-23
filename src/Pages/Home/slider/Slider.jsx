@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 export const CarouselMain = () => {
     const [currentSlider, setCurrentSlider] = useState(0);
@@ -41,15 +44,26 @@ export const CarouselMain = () => {
 };
 
 export const Carousel2 = () => {
+    useEffect(() => {
+        AOS.init();
+    }, [])
     return (
         <div className="max-w-7xl mx-auto h-[540px] lg:h-[670px] px-3 lg:px-10 flex flex-col lg:flex-row items-center justify-center overflow-hidden gap-5 lg:gap-10 relative">
             <div className="bg-[#f3f9fc] w-full absolute left-0 h-[540px] lg:h-[670px] -z-40"></div>
             <div className="w-2/3 lg:w-1/3 text-center lg:text-left space-y-2 lg:space-y-5 py-5">
-                <h1 className="text-lg md:text-2xl lg:text-[40px] font-bold">Quality Spotlight</h1>
-                <p className="text-[#616161] text-md md:text-lg">
+                <h1 data-aos="fade-right"
+                    data-aos-delay="50"
+                    data-aos-duration="1000" className="text-lg md:text-2xl lg:text-[40px] font-bold">
+                    Quality Spotlight
+                </h1>
+                <p data-aos="flip-left"
+                    data-aos-delay="50"
+                    data-aos-duration="1000" className="text-[#616161] text-md md:text-lg">
                     Let the spotlight guide you through a visual journey of uncompromising quality in every thread and seam. Welcome to a world where quality is not just a standard; it's a spotlight on craftsmanship.
                 </p>
-                <button className="font-bold py-2 xl:py-3 text-xs md:text-base lg:text-lg xl:text-xl hover:scale-95 duration-300 px-4 lg:px-10 text-white bg-[#2f9fb8]
+                <button data-aos="fade-left"
+                    data-aos-delay="50"
+                    data-aos-duration="1000" className="font-bold py-2 xl:py-3 text-xs md:text-base lg:text-lg xl:text-xl hover:scale-95 duration-300 px-4 lg:px-10 text-white bg-[#2f9fb8]
               before:absolute before:block before:inset-0 before:-z-10 before:bg-sky-500  after:block hover:after:w-full after:w-0 after:hover:left-0 after:right-0 after:top-0 after:h-full after:-z-10 after:duration-300 after:bg-sky-900 after:absolute relative inline-block">
                     <Link to='/photo_gallery'>Explore More</Link>
                 </button>

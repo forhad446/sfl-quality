@@ -1,7 +1,17 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const DepartmentalGoal = () => {
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     return (
-        <div id="department-goal">
+        <div data-aos="zoom-out"
+            data-aos-delay="50"
+            data-aos-duration="1000" id="department-goal">
             <div className="container max-w-3xl px-4 mx-auto sm:px-8">
                 <div className="py-8">
                     <div className="flex flex-row justify-between w-full mb-1 sm:mb-0">
